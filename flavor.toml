@@ -85,7 +85,7 @@ border = { fg = "#CECDC3", bold = true } # ui-3
 active = { fg = "#100F0F", bg = "#F2F0E5" } # tx, bg-2
 inactive = { fg = "#100F0F" } # tx
 
-[input] # done ?
+[input]
 border = { fg = "#CECDC3" } # ui-3
 title = { fg = "#B7B5AC", bold = true } # tx-3
 value = { fg = "#100F0F" } # tx
