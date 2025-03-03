@@ -29,7 +29,7 @@ hovered = { bg = "#F2F0E5" } # bg-2
 preview_hovered = { underline = true }
 
 # Find
-find_keyword = { fg = "#FFFCF0", bg = "#D0A215" } # bg, ye-2
+find_keyword = { fg = "#D0A215", reversed = true } # ye-2
 find_position = { fg = "#B7B5AC", bold = true, italic = true } # tx-3
 
 # Marker
@@ -44,9 +44,9 @@ tab_inactive = { fg = "#6F6E69", bg = "#E6E4D9" } # tx-2, ui
 tab_width = 1
 
 # Count
-count_copied = { fg = "#FFFCF0", bg = "#66800B", bold = true } # bg, gr
-count_cut = { fg = "#FFFCF0", bg = "#AF3029", bold = true } # bg, re
-count_selected = { fg = "#FFFCF0", bg = "#24837B", bold = true } # bg, cy
+count_copied = { fg = "#66800B", bold = true, reversed = true } # gr
+count_cut = { fg = "#AF3029", bold = true, reversed = true } # re
+count_selected = { fg = "#24837B", bold = true, reversed = true } # cy
 
 # Border
 border_symbol = "│"
