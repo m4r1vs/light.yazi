@@ -91,7 +91,7 @@ title = { fg = "#B7B5AC", bold = true } # tx-3
 value = { fg = "#100F0F" } # tx
 selected = { bg = "#F2F0E5" } # bg-2
 
-[completion]
+[cmp]
 border = { fg = "#CECDC3", bold = true } # ui-3
 active = { fg = "#100F0F", bg = "#F2F0E5" } # tx, bg-2
 inactive = { fg = "#100F0F" } # tx
