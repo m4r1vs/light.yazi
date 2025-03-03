@@ -66,12 +66,7 @@ unset_main = { fg = "#FFFCF0", bg = "#24837B", bold = true } # bg, cy
 unset_alt = { fg = "#24837B", bg = "#BFE8D9" } # cy, cy-100
 
 [status]
-separator_style = { fg = "#E6E4D9", bg = "#E6E4D9" } # ui, ui
-
-# Progress
-progress_label = { fg = "#FFFCF0" } # bg
-progress_normal = { fg = "#24837B", bg = "#5ABDAC" } # cy, cy-300
-progress_error = { bg = "#AF3029" } # re
+overall = { fg = "#100F0F" } # tx
 
 # Permissions
 perm_type = { fg = "#205EA6" } # bl
@@ -79,6 +74,11 @@ perm_read = { fg = "#AD8301" } # ye
 perm_write = { fg = "#AF3029" } # re
 perm_exec = { fg = "#66800B" } # gr
 perm_sep = { fg = "#6F6E69" } # tx-2
+
+# Progress
+progress_label = { fg = "#FFFCF0" } # bg
+progress_normal = { fg = "#24837B", bg = "#5ABDAC" } # cy, cy-300
+progress_error = { bg = "#AF3029" } # re
 
 [pick]
 border = { fg = "#CECDC3", bold = true } # ui-3
