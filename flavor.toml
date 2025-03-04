@@ -122,8 +122,8 @@ selected = { bg = "#F2F0E5" } # bg-2
 
 [cmp]
 border = { fg = "#CECDC3", bold = true } # ui-3
-active = { fg = "#100F0F", bg = "#F2F0E5" } # tx, bg-2
-inactive = { fg = "#100F0F" } # tx
+active = { fg = "#6F6E69", bg = "#F2F0E5" } # tx-2, bg-2
+inactive = { fg = "#6F6E69" } # tx-2
 
 [tasks]
 border = { fg = "#CECDC3" } # ui-3
