@@ -1,52 +1,18 @@
-# Сolor palette: https://stephango.com/flexoki
-# ---
-# paper       "#FFFCF0" bg
-# base-50     "#F2F0E5" bg-2
-# base-100    "#E6E4D9" ui
-# base-150    "#DAD8CE" ui-2
-# base-200    "#CECDC3" ui-3
-# base-300    "#B7B5AC" tx-3
-# base-600    "#6F6E69" tx-2
-# black       "#100F0F" tx
-# red-600     "#AF3029" re
-# orange-600  "#BC5215" or
-# yellow-600  "#AD8301" ye
-# yellow-400  "#D0A215" ye-2
-# green-600   "#66800B" gr
-# cyan-600    "#24837B" cy
-# cyan-400    "#3AA99F" cy-2
-# cyan-100    "#BFE8D9" cy-100
-# cyan-300    "#5ABDAC" cy-300
-# blue-600    "#205EA6" bl
-# purple-600  "#5E409D" pu
-# magenta-600 "#A02F6F" ma
-
 [manager]
-cwd = { fg = "#100F0F", bold = true } # tx
+cwd = { fg = "#008c99" }
+find_keyword = { bold = true, fg = "#008b0c" }
+find_position = { fg = "#16181a" }
+hovered = { bg = "#7b8496", bold = true, fg = "#16181a" }
+marker_copied = { bg = "#997b00", fg = "#997b00" }
+marker_cut = { bg = "#d11500", fg = "#d11500" }
+marker_selected = { bg = "#acacac", fg = "#008b0c" }
+preview_hovered = { bg = "#acacac", bold = true, fg = "#16181a" }
+tab_active = { bg = "#0057d1", fg = "#ffffff" }
+tab_inactive = { bg = "#acacac", fg = "#16181a" }
 
-# Hovered
-hovered = { bg = "#F2F0E5" } # bg-2
-preview_hovered = { underline = true }
-
-# Find
-find_keyword = { fg = "#D0A215", reversed = true } # ye-2
-find_position = { fg = "#B7B5AC", bold = true, italic = true } # tx-3
-
-# Marker
-marker_copied = { fg = "#66800B", bg = "#66800B" } # gr, gr
-marker_cut = { fg = "#AF3029", bg = "#AF3029" } # re, re
-marker_marked = { fg = "#5ABDAC", bg = "#5ABDAC" } # cy-300, cy-300
-marker_selected = { fg = "#24837B", bg = "#24837B" } # cy, cy
-
-# Tab
-tab_active = { fg = "#100F0F", bg = "#CECDC3", bold = true } # tx, ui-3
-tab_inactive = { fg = "#6F6E69", bg = "#E6E4D9" } # tx-2, ui
-tab_width = 1
-
-# Count
-count_copied = { fg = "#66800B", bold = true, reversed = true } # gr
-count_cut = { fg = "#AF3029", bold = true, reversed = true } # re
-count_selected = { fg = "#24837B", bold = true, reversed = true } # cy
+count_selected = { bg = "#008b0c", fg = "#ffffff" }
+count_copied = { bg = "#997b00", fg = "#ffffff" }
+count_cut = { bg = "#d11500", fg = "#ffffff" }
 
 # Border
 border_symbol = "│"
@@ -139,28 +105,21 @@ footer = { fg = "#100F0F", bg = "#E6E4D9", bold = true } # tx, ui
 
 [filetype]
 rules = [
-  # Images
-  { mime = "image/*", fg = "#5E409D" }, # pu
-
-  # Media
-  { mime = "video/*", fg = "#AD8301" }, # ye
-  { mime = "audio/*", fg = "#AD8301" }, # ye
-
-  # Broken symbolic link
-  { name = "*", is = "orphan", fg = "#B7B5AC", crossed = true }, # tx-3
-  { name = "*/", is = "orphan", fg = "#B7B5AC", crossed = true }, # tx-3
-
-  # Symbolic links
-  { name = "*", is = "link", fg = "#24837B" }, # cy
-  { name = "*/", is = "link", fg = "#24837B" }, # cy
-
-  # Executable
-  { name = "*", is = "exec", fg = "#66800B" }, # gr
-
-  # Empty files
-  { mime = "inode/empty", fg = "#B7B5AC" }, # tx-3
-
-  # Fallback
-  { name = "*", fg = "#6F6E69" }, # tx-2
-  { name = "*/", fg = "#100F0F" } # tx
+    { fg = "#008c99", mime = "image/*" },
+    { fg = "#997b00", mime = "video/*" },
+    { fg = "#997b00", mime = "audio/*" },
+    { fg = "#a018ff", mime = "application/zip" },
+    { fg = "#a018ff", mime = "application/gzip" },
+    { fg = "#a018ff", mime = "application/x-tar" },
+    { fg = "#a018ff", mime = "application/x-bzip" },
+    { fg = "#a018ff", mime = "application/x-bzip2" },
+    { fg = "#a018ff", mime = "application/x-7z-compressed" },
+    { fg = "#a018ff", mime = "application/x-rar" },
+    { fg = "#a018ff", mime = "application/xz" },
+    { fg = "#008b0c", mime = "application/doc" },
+    { fg = "#008b0c", mime = "application/pdf" },
+    { fg = "#008b0c", mime = "application/rtf" },
+    { fg = "#008b0c", mime = "application/vnd.*" },
+    { bold = true, fg = "#0057d1", mime = "inode/directory" },
+    { fg = "#16181a", mime = "*" }
 ]
