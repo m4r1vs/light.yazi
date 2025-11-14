@@ -1,4 +1,4 @@
-[manager]
+[mgr]
 cwd = { fg = "#008c99" }
 find_keyword = { bold = true, fg = "#008b0c" }
 find_position = { fg = "#16181a" }
@@ -16,110 +16,110 @@ count_cut = { bg = "#d11500", fg = "#ffffff" }
 
 # Border
 border_symbol = "│"
-border_style = { fg = "#E6E4D9" } # ui
+border_style = { fg = "#383631" } # ui
 
 [mode]
 # Normal mode
 normal_main = { fg = "#100F0F", bg = "#CECDC3", bold = true } # tx, ui-3
-normal_alt = { fg = "#6F6E69", bg = "#E6E4D9" } # tx-2, ui
+normal_alt = { fg = "#6F6E69", bg = "#E6E4D9" }               # tx-2, ui
 
 # Select mode
 select_main = { fg = "#FFFCF0", bg = "#24837B", bold = true } # bg, cy
-select_alt = { fg = "#24837B", bg = "#BFE8D9" } # cy, cy-100
+select_alt = { fg = "#24837B", bg = "#BFE8D9" }               # cy, cy-100
 
 # Unset mode
 unset_main = { fg = "#FFFCF0", bg = "#24837B", bold = true } # bg, cy
-unset_alt = { fg = "#24837B", bg = "#BFE8D9" } # cy, cy-100
+unset_alt = { fg = "#24837B", bg = "#BFE8D9" }               # cy, cy-100
 
 [status]
 overall = { fg = "#100F0F" } # tx
 
 # Permissions
-perm_type = { fg = "#205EA6" } # bl
-perm_read = { fg = "#AD8301" } # ye
+perm_type = { fg = "#205EA6" }  # bl
+perm_read = { fg = "#AD8301" }  # ye
 perm_write = { fg = "#AF3029" } # re
-perm_exec = { fg = "#66800B" } # gr
-perm_sep = { fg = "#6F6E69" } # tx-2
+perm_exec = { fg = "#66800B" }  # gr
+perm_sep = { fg = "#6F6E69" }   # tx-2
 
 # Progress
-progress_label = { fg = "#FFFCF0" } # bg
+progress_label = { fg = "#FFFCF0" }                  # bg
 progress_normal = { fg = "#24837B", bg = "#5ABDAC" } # cy, cy-300
-progress_error = { bg = "#AF3029" } # re
+progress_error = { bg = "#AF3029" }                  # re
 
 [which]
 cols = 3
-mask = { bg = "#F2F0E5" } # bg-2
-cand = { fg = "#AD8301", bold = true } # ye
+mask = { bg = "#F2F0E5" }                # bg-2
+cand = { fg = "#AD8301", bold = true }   # ye
 rest = { fg = "#AD8301", italic = true } # ye
-desc = { fg = "#B7B5AC" } # tx-3
+desc = { fg = "#B7B5AC" }                # tx-3
 separator = " "
-separator_style = { }
+separator_style = {}
 
 [confirm]
-border = { fg = "#CECDC3" } # ui-3
-title = { fg = "#B7B5AC", bold = true } # tx-3
-content = { fg = "#100F0F", bold = true } # tx
-list = { fg = "#100F0F" } # tx
+border = { fg = "#CECDC3" }                               # ui-3
+title = { fg = "#B7B5AC", bold = true }                   # tx-3
+content = { fg = "#100F0F", bold = true }                 # tx
+list = { fg = "#100F0F" }                                 # tx
 btn_yes = { fg = "#100F0F", bg = "#CECDC3", bold = true } # tx, ui-3
-btn_no = { fg = "#6F6E69", bg = "#E6E4D9" } # tx-2, ui
+btn_no = { fg = "#6F6E69", bg = "#E6E4D9" }               # tx-2, ui
 
 [spot]
-border = { fg = "#CECDC3" } # ui-3
+border = { fg = "#CECDC3" }             # ui-3
 title = { fg = "#B7B5AC", bold = true } # tx-3
-tbl_col = { fg = "#6F6E69" } # tx-2
-tbl_cell = { bg = "#F2F0E5" } # bg-2
+tbl_col = { fg = "#6F6E69" }            # tx-2
+tbl_cell = { bg = "#F2F0E5" }           # bg-2
 
 [notify]
 # Notification title
-title_info = { fg = "#205EA6" } # bl
-title_warn = { fg = "#BC5215" } # or
+title_info = { fg = "#205EA6" }  # bl
+title_warn = { fg = "#BC5215" }  # or
 title_error = { fg = "#AF3029" } # re
 
 [pick]
 border = { fg = "#CECDC3", bold = true } # ui-3
-active = { fg = "#100F0F" } # tx
-inactive = { fg = "#6F6E69" } # tx-2
+active = { fg = "#100F0F" }              # tx
+inactive = { fg = "#6F6E69" }            # tx-2
 
 [input]
-border = { fg = "#CECDC3" } # ui-3
+border = { fg = "#CECDC3" }             # ui-3
 title = { fg = "#B7B5AC", bold = true } # tx-3
-value = { fg = "#100F0F" } # tx
-selected = { bg = "#F2F0E5" } # bg-2
+value = { fg = "#100F0F" }              # tx
+selected = { bg = "#F2F0E5" }           # bg-2
 
 [cmp]
-border = { fg = "#CECDC3", bold = true } # ui-3
+border = { fg = "#CECDC3", bold = true }    # ui-3
 active = { fg = "#6F6E69", bg = "#F2F0E5" } # tx-2, bg-2
-inactive = { fg = "#6F6E69" } # tx-2
+inactive = { fg = "#6F6E69" }               # tx-2
 
 [tasks]
-border = { fg = "#CECDC3" } # ui-3
+border = { fg = "#CECDC3" }             # ui-3
 title = { fg = "#B7B5AC", bold = true } # tx-3
-hovered = { bg = "#F2F0E5" } # bg-2
+hovered = { bg = "#F2F0E5" }            # bg-2
 
 [help]
-on = { fg = "#205EA6" } # bl
-run = { fg = "#24837B" } # cy
-desc = { fg = "#B7B5AC", italic = true } # tx-3
-hovered = { bg = "#F2F0E5" } # bg-2
+on = { fg = "#205EA6" }                                  # bl
+run = { fg = "#24837B" }                                 # cy
+desc = { fg = "#B7B5AC", italic = true }                 # tx-3
+hovered = { bg = "#F2F0E5" }                             # bg-2
 footer = { fg = "#100F0F", bg = "#E6E4D9", bold = true } # tx, ui
 
 [filetype]
 rules = [
-    { fg = "#008c99", mime = "image/*" },
-    { fg = "#997b00", mime = "video/*" },
-    { fg = "#997b00", mime = "audio/*" },
-    { fg = "#a018ff", mime = "application/zip" },
-    { fg = "#a018ff", mime = "application/gzip" },
-    { fg = "#a018ff", mime = "application/x-tar" },
-    { fg = "#a018ff", mime = "application/x-bzip" },
-    { fg = "#a018ff", mime = "application/x-bzip2" },
-    { fg = "#a018ff", mime = "application/x-7z-compressed" },
-    { fg = "#a018ff", mime = "application/x-rar" },
-    { fg = "#a018ff", mime = "application/xz" },
-    { fg = "#008b0c", mime = "application/doc" },
-    { fg = "#008b0c", mime = "application/pdf" },
-    { fg = "#008b0c", mime = "application/rtf" },
-    { fg = "#008b0c", mime = "application/vnd.*" },
-    { bold = true, fg = "#0057d1", mime = "inode/directory" },
-    { fg = "#16181a", mime = "*" }
+  { fg = "#008c99", mime = "image/*" },
+  { fg = "#997b00", mime = "video/*" },
+  { fg = "#997b00", mime = "audio/*" },
+  { fg = "#a018ff", mime = "application/zip" },
+  { fg = "#a018ff", mime = "application/gzip" },
+  { fg = "#a018ff", mime = "application/x-tar" },
+  { fg = "#a018ff", mime = "application/x-bzip" },
+  { fg = "#a018ff", mime = "application/x-bzip2" },
+  { fg = "#a018ff", mime = "application/x-7z-compressed" },
+  { fg = "#a018ff", mime = "application/x-rar" },
+  { fg = "#a018ff", mime = "application/xz" },
+  { fg = "#008b0c", mime = "application/doc" },
+  { fg = "#008b0c", mime = "application/pdf" },
+  { fg = "#008b0c", mime = "application/rtf" },
+  { fg = "#008b0c", mime = "application/vnd.*" },
+  { bold = true, fg = "#0057d1", mime = "inode/directory" },
+  { fg = "#16181a", mime = "*" },
 ]
